@@ -10,7 +10,7 @@ export default class UserList extends Component{
     return (
           <section className='nameUsers'>
               {Users.map(elem => {
-                  return <User name={elem.name}/>
+                  return <User key={elem.name} name={elem.name}/>
               })}
           </section>
           
